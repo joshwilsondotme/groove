@@ -1,0 +1,45 @@
+button {border: none;}
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    height: 3.2rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    line-height: 3.2rem;
+    padding: 0 1.6rem;
+    border-radius: 4px;
+    transition: all .1s;
+    cursor: pointer;
+  }
+
+  &--plain {
+    background-color: $color-white;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+
+  &--groovey {
+    background-color: $color-primary;
+    color: $color-white;
+    &:hover {
+      background-color: $color-primary-dark-1;
+      color: $color-white;
+    }
+  }
+
+  &--submit {
+    line-height: 4.8rem;
+    height: 4.8rem;
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
+}

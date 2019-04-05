@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="523" viewBox="0 0 1440 523">
+    <defs>
+        <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#F7F9FA"/>
+        </linearGradient>
+        <path id="a" d="M0 0h1440v478.983c-141.433 31.683-251.277 46.022-329.533 43.017C831.492 511.287 487 439.166 458 435.517c-153.673-19.34-306.34-4.851-458 43.466V0z"/>
+    </defs>
+    <use fill="url(#b)" fill-rule="evenodd" transform="matrix(-1 0 0 1 1440 0)" xlink:href="#a"/>
+</svg>

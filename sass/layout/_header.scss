@@ -1,0 +1,38 @@
+.header {
+  padding: 2.5rem 0;
+  
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include respond(phone) {
+      padding: 0 1.6rem;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    &-link {
+      display: flex;
+      align-items: center;
+      img {
+        border: 0;
+        display: inline-block;
+      }
+    }
+  }
+
+  
+  .links__list {
+    @include ul-reset;
+    display: flex;
+
+    .links__item {
+      &:not(:last-child) {
+        padding-right: 2.5rem;
+      }
+    }
+  }
+}

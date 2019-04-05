@@ -1,0 +1,158 @@
+.contact {
+  
+  &__container {
+    border-radius: 4px;
+    background-color: $color-white;
+    padding: 1.6rem;
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.1);
+
+    display: flex;
+
+    @include respond(phone) {
+     display: block; 
+     margin-left: 1.6rem;
+     margin-right: 1.6rem;
+    }
+  }
+
+  &__left {
+    > div {margin-bottom: 1.6rem;}
+    width: 50%;
+    margin-right: 8px;
+
+    @include respond(phone) {
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+
+  &__right {
+    width: 50%;
+    margin-left: 8px;
+
+    @include respond(phone) {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  &__panel {
+    background-color: $color-gray-light-1;
+    padding: 2.4rem;
+    font-size: 1.6rem;
+
+    h2 {
+      font-size: 2.6rem;
+    }
+
+
+  }
+
+  &__form {
+    padding: 0 2.8rem;
+    @include respond(tab-port) {
+      padding: 0;
+    }
+    @include respond(phone) {
+      padding: 0;
+    }
+  }
+
+
+}
+
+.form {
+  h2 {margin-bottom: 2.4rem;}
+
+  &__group {
+    margin-bottom: 2.4rem;
+  }
+
+  &__label {
+    display: block;
+    color: $color-black;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: .8rem;
+  }
+
+  &__input {
+    font-size: 1.6rem;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    color: $color-black;
+    border: 1px solid $color-gray-light-2;
+    border-radius: 4px;
+    background-color: rgba($color-white, 1);
+    font-family: inherit;
+    width: 100%;
+    display: block;
+    transition: all .3s;
+
+    &::placeholder {
+      color: $color-blue-grey;
+    }
+
+    &:focus:invalid {
+      border: 1px solid #0ba0be;
+    }
+
+    &:focus {
+      outline: 0;
+      border: 1px solid $color-primary;
+    }
+
+
+  }
+
+  &__select {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none; 
+    background-color: $color-white;
+    border: 1px solid $color-gray-light-2;
+    padding: 1.5rem 2rem;
+    overflow: hidden;
+    width: 100%;
+    font-size: 1.6rem;
+    color: $color-blue-grey;
+
+    background-image: url(../../img/arrow__down-grey.svg);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+
+    &::-ms-expand { 
+      display: none;
+    }
+
+    &:focus {
+      outline: 0;
+      border: 1px solid $color-primary;
+    }
+
+  }
+
+  &__option {
+    font-size: 1.6rem;
+    color: $color-blue-grey;
+  }
+
+  &__textarea {
+    width: 100%;
+    border: 1px solid $color-gray-light-2;
+    border-radius: 4px;
+    padding: 1rem 1.6rem;
+    font-size: 1.6rem;
+    color: $color-black;
+
+    &::placeholder {
+      color: $color-blue-grey;
+      font-size: 1.6rem;
+    }
+
+    &:focus {
+      outline: 0;
+      border: 1px solid $color-primary;
+    }
+  }
+}
