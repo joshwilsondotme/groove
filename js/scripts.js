@@ -1,0 +1,1 @@
+document.getElementById('form__submit').disabled = true;
